@@ -15,11 +15,11 @@ public class filehandling {
 		FileWriter fw= new FileWriter(f,false);
 		
 		fw.write("writing to the file");
-		String k="append text";
-		fw.append(k);
+		//appending text to file
+		fw.append("append the text");
 		fw.close();
 		//read operation
-//		
+	
 		Scanner s=new Scanner(f);
 		while(s.hasNextLine()) {
 			String a=s.nextLine();
