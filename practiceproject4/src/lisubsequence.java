@@ -39,9 +39,14 @@ public class lisubsequence {
 		
 		public static void main(String args[])
 		{
-			int arr[]= { 10, 22, 9, 33, 21, 50, 41, 60 };
+			int arr[]= { 10, 15, 9,34,24,68,19};
 			
 			int n = arr.length;
+			System.out.println("given sequence is");
+				for(int i=0;i<n;i++) {
+					System.out.print(arr[i]+"  ");
+				}
+				System.out.println("\n");
 			System.out.println("Length of longest incresing subsequence is " + lis(arr, n));
 		}
 	}
