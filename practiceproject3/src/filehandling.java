@@ -17,7 +17,7 @@ public class filehandling
     try{
     	System.out.println("The contents of the file are:");
     	//Create the path for the file
-        File F=new File("filehand.txt");
+        File F=new File("file1.txt");
         //If the file exist the read the contents
         if(! F.exists())
         F.createNewFile();
@@ -40,7 +40,7 @@ public class filehandling
     try
     {
         String source = "";
-        File f=new File("filehand.txt");
+        File f=new File("file1.txt");
         
         BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
         //It will take new content everytime it is runned
@@ -89,7 +89,7 @@ public class filehandling
   public static void deleteFile() {
 	try {
 		System.out.println("It deletes the content");
-		Path path= Paths.get("filehanddemo.txt");
+		Path path= Paths.get("file1.txt");
 		if(Files.deleteIfExists(path))
 			System.out.println("File  deleted");
 		else
