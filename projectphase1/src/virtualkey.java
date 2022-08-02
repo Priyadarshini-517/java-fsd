@@ -95,6 +95,18 @@ public class virtualkey {
             Menu2();
         }
     }
+    void sorting() {
+        if (name.list().length==0)
+            System.out.println(" folder is empty");
+        else {
+            String[] list = name.list();
+            System.out.println(" files in "+ name +" are :");
+            Arrays.sort(list);
+            for (String str:list) {
+                System.out.println(str);
+            }
+        }
+    }
     void addFile(String filename) throws IOException {
         File filepath = new File(name +"/"+filename);
         String[] list = name.list();
@@ -108,18 +120,7 @@ public class virtualkey {
         System.out.println("File "+filename+"is added to "+ name+" Successfully");
     }
 
-    void sorting() {
-        if (name.list().length==0)
-            System.out.println(" folder is empty");
-        else {
-            String[] list = name.list();
-            System.out.println(" files in "+ name +" are :");
-            Arrays.sort(list);
-            for (String str:list) {
-                System.out.println(str);
-            }
-        }
-    }
+    
     void searching(String filename) {
         String[] list = name.list();
         for (String file: list) {
