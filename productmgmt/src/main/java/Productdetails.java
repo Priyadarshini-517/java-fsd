@@ -13,9 +13,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class Product
- */
 public class Productdetails extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -26,15 +23,8 @@ public class Productdetails extends HttpServlet {
     }
 
 	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		//response.getWriter().append("Served at: ").append(request.getContextPath());
-	}
-
-	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		//doGet(request, response);
+		
 		PrintWriter out=response.getWriter();
 		response.setContentType("text/html");
 		String id=request.getParameter("id");
@@ -42,10 +32,10 @@ public class Productdetails extends HttpServlet {
 		{
 			Class.forName("com.mysql.jdbc.Driver");
 Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb","root","Darshini@517");
-			PreparedStatement pstmt=con.prepareStatement("select * from productid where prodid=?");
-			pstmt.setString(1,id);
-			RequestDispatcher rd2 = request.getRequestDispatcher("product.html");
-			ResultSet rs=pstmt.executeQuery();
+			PreparedStatement stmt=con.prepareStatement("select * from productid where prodid=?");
+			stmt.setString(1,id);
+			RequestDispatcher rd = request.getRequestDispatcher("product.html");
+			ResultSet rs=stmt.executeQuery();
 			if(rs.next())
 			{
 				out.println("<br/>Product ID : " +rs.getInt("prodid"));
@@ -56,7 +46,7 @@ Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb",
 			{
 				out.println("<br/>Failed to Retreive Product Details");
 out.println("<br/>Incorrect Product ID!!! Please try by giving another ProductID");
-				rd2.include(request, response);    
+				rd.include(request, response);    
 			}
 		}
 		catch(Exception e)
