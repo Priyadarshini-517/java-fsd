@@ -32,7 +32,7 @@ for(String[] flight:flights){
 <td><%=flight[2]%></td>
 </tr>
 </table>
-<a href=BookFlight.jsp>Book Now</a>
+<a href=Payment.jsp>Book Now</a>
 <%
 }
 %>

@@ -9,7 +9,7 @@
 <body >
 <br>
 <a href=HomePage.jsp style="color:black;text-decoration:none ;font-size:35px;fontweight:bold;">Flight Booking</a>
-<br><br>
+<br><br><div align="center">
 <h2>Admin Login</h2>
 <div style="border:3px solid black;width:25%;border-radius:20px;padding:20px" 
 align="center">
@@ -31,5 +31,6 @@ if(message!=null){
 session.setAttribute("message", null);
 }
 %>
+</div>
 </body>
 </html>

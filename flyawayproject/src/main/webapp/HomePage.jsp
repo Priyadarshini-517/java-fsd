@@ -7,9 +7,11 @@
 <meta charset="ISO-8859-1">
 <title>Flight Booking</title>
 </head>
-<body >
-<h1>FlyAway</h1>
-<div align="right">
+<body>
+<div align="center">
+<h1>Welcome to Flyaway </h1>
+</div>
+<div align="left">
 <a href="AdminPage.jsp">Admin Login</a>
 </div>
 <%
@@ -23,11 +25,13 @@ if(user!=null){
 <%
 }else{
 %>
+<div align="left">
 <a href=UserPage.jsp>User Login</a>
+</div>
 <%
 }
 %>
-<br><br>
+<br><br><div align=center>
 <div style="border:5px solid black;width:25%;border-radius:20px;padding:20px" 
 align="center">
 <form action=FlightList method=post>

@@ -4,13 +4,14 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Admin Home</title>
+<title>Admin home page</title>
 </head>
 <body >
 <br>
 <a href=HomePage.jsp style="color:black;text-decoration:none ;font-size:35px;fontweight:bold;">Flight Booking</a>
-<br><br>
-<h1>Insert New Flight Details</h1>
+<br><br><div align="center">
+<h1>Insert new available flight details</h1>
+
 <div style="border:3px solid black;width:25%;border-radius:20px;padding:20px" 
 align="center">
 <form action=InsertFlight method=post>
