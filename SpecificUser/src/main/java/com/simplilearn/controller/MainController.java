@@ -47,8 +47,6 @@ public class MainController {
         String price=request.getParameter("price");
         dao.updateProduct(id,name,price);
         
-//		EProductEntity entity=dao.updateProduct(id,name,price);
-//		map.addAttribute("obj",entity);
-//		return "details";
+		
 	}
 }
