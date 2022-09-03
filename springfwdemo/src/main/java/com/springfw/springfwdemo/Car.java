@@ -1,6 +1,9 @@
 package com.springfw.springfwdemo;
 
-public class car implements Vehicle{
+import org.springframework.stereotype.Component;
+
+@Component
+public class Car implements Vehicle{
 	public void drive() {
 		System.out.println("inside car");
 	}

@@ -54,9 +54,9 @@ public class EProductDao {
 
 	
 	
-	public void updateProduct(long id,String name,String price) {
-	    String sql = "update productdetails set pname="+"'"+name+"'"+","+"price="+price+" where pid="+id;
-		jdbcTemplate.update(sql);
-	
-	}
+//	public void updateProduct(long id,String name,String price) {
+//	    String sql = "update productdetails set pname="+"'"+name+"'"+","+"price="+price+" where pid="+id;
+//		jdbcTemplate.update(sql);
+//	
+//	}
 }

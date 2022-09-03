@@ -14,7 +14,7 @@ public class App
         System.out.println( "Hello World!" );
         @SuppressWarnings("resource")
 		ApplicationContext obj= new ClassPathXmlApplicationContext("com/springfw/springfwdemo/index.xml");
-        Vehicle veh=(Vehicle)obj.getBean("vehicle");
+        Vehicle veh=(Vehicle)obj.getBean("car");
         System.out.println(veh);
         veh.drive();
     }

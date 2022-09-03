@@ -40,15 +40,15 @@ public class MainController {
 	}
 	
 	
-	@GetMapping("/sucess")
-	public void updateProduct(HttpServletRequest request,ModelMap map) {
-		long id=Long.parseLong(request.getParameter("id"));
-		String name=request.getParameter("name");
-        String price=request.getParameter("price");
-        dao.updateProduct(id,name,price);
-        
+//	@GetMapping("/sucess")
+//	public void updateProduct(HttpServletRequest request,ModelMap map) {
+//		long id=Long.parseLong(request.getParameter("id"));
+//		String name=request.getParameter("name");
+//        String price=request.getParameter("price");
+//        dao.updateProduct(id,name,price);
+//        
 //		EProductEntity entity=dao.updateProduct(id,name,price);
 //		map.addAttribute("obj",entity);
 //		return "details";
-	}
+//	}
 }
