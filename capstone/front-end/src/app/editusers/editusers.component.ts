@@ -29,7 +29,7 @@ export class EditusersComponent implements OnInit {
 
   BookDelete(id:number){
     this.service.deletePost(id);
-    console.log("user deleted");  
+    console.log("employee deleted");  
     this.onReload();
 }
 
