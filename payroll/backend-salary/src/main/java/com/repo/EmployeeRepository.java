@@ -1,8 +1,9 @@
-package com.techtalk.spring_crud_app.repository;
+package com.repo;
 
 
-import com.techtalk.spring_crud_app.model.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.model.Employee;
 
 public interface EmployeeRepository extends JpaRepository<Employee,Integer> {
     Employee getByName(String name);

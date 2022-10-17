@@ -1,7 +1,8 @@
-package com.techtalk.spring_crud_app.controller;
+package com.controller;
 
-import com.techtalk.spring_crud_app.model.Employee;
-import com.techtalk.spring_crud_app.services.EmployeeService;
+import com.model.Employee;
+import com.services.EmployeeService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

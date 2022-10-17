@@ -1,4 +1,4 @@
-package com.techtalk.spring_crud_app.model;
+package com.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

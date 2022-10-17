@@ -1,7 +1,8 @@
-package com.techtalk.spring_crud_app.services;
+package com.services;
 
-import com.techtalk.spring_crud_app.model.Employee;
-import com.techtalk.spring_crud_app.repository.EmployeeRepository;
+import com.model.Employee;
+import com.repo.EmployeeRepository;
+
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
